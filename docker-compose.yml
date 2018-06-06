@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+    jekyll:
+        build:
+          context: . 
+        image: beautiful-jekyll-docker
+        command: jekyll serve --watch --incremental
+        ports:
+          - 80:4000
+          - 4000:4000
+        volumes:
+          - .:/srv/jekyll

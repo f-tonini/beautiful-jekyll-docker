@@ -1,0 +1,8 @@
+# project
+web/*
+.sass-cache
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db

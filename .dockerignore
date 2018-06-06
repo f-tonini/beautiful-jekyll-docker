@@ -1,0 +1,6 @@
+﻿/app/*
+.sass-cache
+static
+_config.yml
+.jekyll-metadata
+.git
