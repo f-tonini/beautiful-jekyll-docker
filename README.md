@@ -10,7 +10,7 @@ Assuming **Docker** is installed, download this image using the following comman
 docker pull ftonini/beautiful-jekyll-docker
 ```    
 
-# Getting Started: using Dockerfile
+# Getting Started:
 
 Follow these instructions (assumes you have **Git** installed on your system):
 1. In the command line (CLI) navigate to your local directory where you want to store and develop your beautiful-jekyll website
@@ -43,7 +43,7 @@ Follow these instructions (assumes you have **Git** installed on your system):
 
 # Getting Started: using Docker Compose
 
-To make things even easier, you could also use my ```docker-compose.yml``` file, instead of using the set of istructions above based on the Dockerfile. The following steps assume you have **Docker Compose** and **Git** installed.
+To make things even easier, you could also use my ```docker-compose.yml``` file, instead of using the set of istructions. The following steps assume you have **Docker Compose** and **Git** installed.
 
 1. In the command line (CLI) navigate to your local directory where you want to store and develop your beautiful-jekyll website
     
@@ -77,7 +77,7 @@ You should now have a running container. You can check this by running:
 docker container ls -a
 ```
 
- If you decided to use the Dockerfile instructions, you should see a running container called *my-jekyll-site* (you can customize the container name by changing the ```--name``` option above). If you used ```docker-compose up``` the container will be automatically named based on your folder name (*beautiful-jekyll-docker_1*).
+You should see a running container called *my-jekyll-site* (you can customize the container name by changing the ```--name``` option above). If you used ```docker-compose up``` the container will be automatically named based on your folder name (*beautiful-jekyll-docker_1*).
 
 Preview your beautifull-jekyll site for testing/dev on your browser at ```http://localhost:4000```. If you want to preview the site at ```http://localhost```, 
 make sure to replace ```-p 4000:4000``` with ```-p 80:4000``` inside the ```docker container run``` command above. Both ports are exposed in the original jekyll 
