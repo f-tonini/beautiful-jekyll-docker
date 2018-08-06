@@ -32,13 +32,14 @@ Follow these instructions (assumes you have **Git** installed on your system):
     ```    
 
 4. Create and run a Docker container locally using the following command:
-    * On Linux/Mac terminal:
-    ```
-    docker container run -d -p 4000:4000 --name my-jekyll-site -v $(pwd):/srv/jekyll ftonini/beautiful-jekyll-docker
-    ```
-    * On Windows PowerShell:
+
     ```
     docker container run -d -p 4000:4000 --name my-jekyll-site -v ${pwd}:/srv/jekyll ftonini/beautiful-jekyll-docker
+    ```
+If the above command does not work, try replacing `${pwd}` with `"$PWD"`, hence:
+
+    ```
+    docker container run -d -p 4000:4000 --name my-jekyll-site -v "$PWD":/srv/jekyll ftonini/beautiful-jekyll-docker
     ```
 
 # Getting Started: using Docker Compose
